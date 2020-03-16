@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TriviaquizService } from '../triviaquiz.service';
 
 @Component({
   selector: 'app-quiz',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-
-  constructor() { }
+  questions: any;
+  constructor(private service: TriviaquizService) { }
 
   ngOnInit(): void {
+    this.getQuestions();
+  }
+
+  getQuestions(){
+    this.service.getQuestions().subscribe(response => {
+      console.log(response)
+      this.questions = response
+    }) 
   }
 
 }
