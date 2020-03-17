@@ -15,7 +15,7 @@ export class ScoreComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.getScore().subscribe(response => {
-      this.score = response;
+      // this.score = response;
     });
     this.lastPlayer = this.service.getLastPlayer();
   }
