@@ -1,5 +1,8 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import { Question } from "./interfaces/question";
+import { NgForm } from "@angular/forms";
+import { QuestionAnswers } from "./interfaces/question-answers";
 // import { format } from "path";
 
 @Injectable({
@@ -11,7 +14,7 @@ export class TriviaquizService {
     username: "",
     score: 0
   };
-  // questionsAndAnswers: QAndA = { questions: [], answers: {} };
+  questionsAndAnswers: QuestionAnswers = { questions: [], answers: {} };
 
   constructor(private http: HttpClient) {}
 
@@ -24,16 +27,19 @@ export class TriviaquizService {
   getLastPlayer() {
     return this.lastPlayer;
   }
-  // calculateScore() {
-  //   this.lastPlayer.username = form.value.username;
-  //   this.lastPlayer.score = 0;
-  //   this.questionsAndAnswers.questions = questions;
-  //   this.questionsAndAnswers.answers = form.value;
-  //   this.questionsAndAnswers.forEach((question, index) => {
-  //     if (question.answer === format.value[index]) {
-  //       this.lastPlayer.score++;
-  //     }
-  //   });
-  //   this.addScore(this.lastPlayer).subscribe();
-  // }
+  calculateScore(form: NgForm, questions: Question[]) {
+    this.lastPlayer.username = form.value.username;
+    this.lastPlayer.score = 0;
+    this.questionsAndAnswers.questions = questions;
+    this.questionsAndAnswers.answers = form.value;
+    questions.forEach((question, index) => {
+      if (question.answer === form.value[index]) {
+        this.lastPlayer.score++;
+      }
+    });
+    this.addScore(this.lastPlayer).subscribe();
+  }
+  addScore(theLastPlayer: any) {
+    return this.http.post(`${this.baseUrl}/scores`, theLastPlayer);
+  }
 }

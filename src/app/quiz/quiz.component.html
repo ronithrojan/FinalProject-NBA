@@ -1,7 +1,7 @@
 <p>quiz works!</p>
-<form action="">
+<form #quizForm="ngForm" (ngSubmit)="submitQuiz(quizForm)">
   <label for="username">Name</label>
-  <input type="text" id="username" name="username" />
+  <input type="text" id="username" name="username" ngModel />
   <div *ngFor="let question of questions; index as i" class="question-group">
     <p>{{ question.question }}</p>
     <div class="choice">
@@ -10,6 +10,7 @@
         name="{{ i }}"
         id="{{ question.id }}"
         value="{{ questions.choice_1 }}"
+        ngModel
       />
       <label for="{{ question.id }}">{{ question.choice_1 }}</label>
     </div>
@@ -19,6 +20,7 @@
         name="{{ i }}"
         id="{{ question.id }}"
         value="{{ question.choice_2 }}"
+        ngModel
       />
       <label for="{{ question.id }}">{{ question.choice_2 }}</label>
     </div>
@@ -28,6 +30,7 @@
         name="{{ i }}"
         id="{{ question.id }}"
         value="{{ question.choice_3 }}"
+        ngModel
       />
       <label for="{{ question.id }}">{{ question.choice_3 }}</label>
     </div>
@@ -37,6 +40,7 @@
         name="{{ i }}"
         id="{{ question.id }}"
         value="{{ question.choice_4 }}"
+        ngModel
       />
       <label for="{{ question.id }}">{{ question.choice_4 }}</label>
     </div>
