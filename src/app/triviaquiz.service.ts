@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { format } from "path";
+// import { format } from "path";
 
 @Injectable({
   providedIn: "root"
@@ -20,6 +20,9 @@ export class TriviaquizService {
   }
   getScore() {
     return this.http.get(`${this.baseUrl}/scores`);
+  }
+  getLastPlayer() {
+    return this.lastPlayer;
   }
   // calculateScore() {
   //   this.lastPlayer.username = form.value.username;
