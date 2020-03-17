@@ -9,6 +9,7 @@ import { NgForm } from "@angular/forms";
   styleUrls: ["./quiz.component.css"]
 })
 export class QuizComponent implements OnInit {
+  show: boolean = false;
   questions: any;
   constructor(private service: TriviaquizService, private router: Router) {}
 
@@ -25,5 +26,8 @@ export class QuizComponent implements OnInit {
   submitQuiz(form: NgForm) {
     this.service.calculateScore(form, this.questions);
     this.router.navigate(["/scores"]);
+  }
+  showForm() {
+    this.show = !this.show;
   }
 }

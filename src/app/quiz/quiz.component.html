@@ -1,53 +1,55 @@
-<p>quiz works!</p>
-<form #quizForm="ngForm" (ngSubmit)="submitQuiz(quizForm)">
-  <label for="username">Name</label>
-  <input type="text" id="username" name="username" ngModel />
-  <label for="city">City</label>
-  <input type="text" id="city" name="city" ngModel />
-  <label for="state">State</label>
-  <input type="text" id="state" name="state" ngModel />
-  <div *ngFor="let question of questions; index as i" class="question-group">
-    <p>{{ question.question }}</p>
-    <div class="choice">
-      <input
-        type="radio"
-        name="{{ i }}"
-        id="{{ question.id }}"
-        value="{{ questions.choice_1 }}"
-        ngModel
-      />
-      <label for="{{ question.id }}">{{ question.choice_1 }}</label>
+<button (click)="showForm()">Want to Play?</button>
+<div *ngIf="show" class="form-container">
+  <form #quizForm="ngForm" (ngSubmit)="submitQuiz(quizForm)">
+    <label for="username">Name</label>
+    <input type="text" id="username" name="username" ngModel />
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" ngModel />
+    <label for="state">State</label>
+    <input type="text" id="state" name="state" ngModel />
+    <div *ngFor="let question of questions; index as i" class="question-group">
+      <p>{{ question.question }}</p>
+      <div class="choice">
+        <input
+          type="radio"
+          name="{{ i }}"
+          id="{{ question.id }}"
+          value="{{ questions.choice_1 }}"
+          ngModel
+        />
+        <label for="{{ question.id }}">{{ question.choice_1 }}</label>
+      </div>
+      <div class="choice">
+        <input
+          type="radio"
+          name="{{ i }}"
+          id="{{ question.id }}"
+          value="{{ question.choice_2 }}"
+          ngModel
+        />
+        <label for="{{ question.id }}">{{ question.choice_2 }}</label>
+      </div>
+      <div class="choice">
+        <input
+          type="radio"
+          name="{{ i }}"
+          id="{{ question.id }}"
+          value="{{ question.choice_3 }}"
+          ngModel
+        />
+        <label for="{{ question.id }}">{{ question.choice_3 }}</label>
+      </div>
+      <div class="choice">
+        <input
+          type="radio"
+          name="{{ i }}"
+          id="{{ question.id }}"
+          value="{{ question.choice_4 }}"
+          ngModel
+        />
+        <label for="{{ question.id }}">{{ question.choice_4 }}</label>
+      </div>
     </div>
-    <div class="choice">
-      <input
-        type="radio"
-        name="{{ i }}"
-        id="{{ question.id }}"
-        value="{{ question.choice_2 }}"
-        ngModel
-      />
-      <label for="{{ question.id }}">{{ question.choice_2 }}</label>
-    </div>
-    <div class="choice">
-      <input
-        type="radio"
-        name="{{ i }}"
-        id="{{ question.id }}"
-        value="{{ question.choice_3 }}"
-        ngModel
-      />
-      <label for="{{ question.id }}">{{ question.choice_3 }}</label>
-    </div>
-    <div class="choice">
-      <input
-        type="radio"
-        name="{{ i }}"
-        id="{{ question.id }}"
-        value="{{ question.choice_4 }}"
-        ngModel
-      />
-      <label for="{{ question.id }}">{{ question.choice_4 }}</label>
-    </div>
-  </div>
-  <button>Submit Quiz</button>
-</form>
+    <button>Submit Quiz</button>
+  </form>
+</div>
