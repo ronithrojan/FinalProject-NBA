@@ -7,6 +7,7 @@
     <input type="text" id="city" name="city" ngModel />
     <label for="state">State</label>
     <input type="text" id="state" name="state" ngModel />
+
     <div *ngFor="let question of questions; index as i" class="question-group">
       <p>{{ question.question }}</p>
       <div class="choice">
