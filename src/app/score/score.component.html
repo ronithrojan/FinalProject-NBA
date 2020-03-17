@@ -5,6 +5,9 @@
 <p>{{ lastPlayer?.score }}</p>
 <ol>
   <li *ngFor="let score of scores">
-    <p>Player: {{ score?.username }} Score: {{ score?.score }}</p>
+    <p>
+      Player: {{ score?.username }} City: {{ score?.city }} State:
+      {{ score?.state }} Score: {{ score?.score }}
+    </p>
   </li>
 </ol>

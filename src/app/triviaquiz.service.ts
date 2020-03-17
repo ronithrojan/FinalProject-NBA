@@ -42,4 +42,7 @@ export class TriviaquizService {
   addScore(theLastPlayer: any) {
     return this.http.post(`${this.baseUrl}/scores`, theLastPlayer);
   }
+  getQuestionsAndAnswers() {
+    return this.questionsAndAnswers;
+  }
 }

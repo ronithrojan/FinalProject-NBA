@@ -2,6 +2,10 @@
 <form #quizForm="ngForm" (ngSubmit)="submitQuiz(quizForm)">
   <label for="username">Name</label>
   <input type="text" id="username" name="username" ngModel />
+  <label for="city">City</label>
+  <input type="text" id="city" name="city" ngModel />
+  <label for="state">State</label>
+  <input type="text" id="state" name="state" ngModel />
   <div *ngFor="let question of questions; index as i" class="question-group">
     <p>{{ question.question }}</p>
     <div class="choice">
