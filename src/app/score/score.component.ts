@@ -9,13 +9,14 @@ import { LastPlayer } from "../interfaces/last-player";
   styleUrls: ["./score.component.css"]
 })
 export class ScoreComponent implements OnInit {
-  score: Score[] = [];
+  scores: any;
   lastPlayer: LastPlayer;
   constructor(private service: TriviaquizService) {}
 
   ngOnInit(): void {
-    this.service.getScore().subscribe(response => {
-      // this.score = response;
+    this.service.getScores().subscribe(response => {
+      this.scores = response;
+      console.log(response);
     });
     this.lastPlayer = this.service.getLastPlayer();
   }

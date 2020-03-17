@@ -18,7 +18,7 @@ export class TriviaquizService {
   getQuestions() {
     return this.http.get(`${this.baseUrl}/questions`);
   }
-  getScore() {
+  getScores() {
     return this.http.get(`${this.baseUrl}/scores`);
   }
   getLastPlayer() {
