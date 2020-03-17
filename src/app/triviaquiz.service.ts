@@ -29,6 +29,8 @@ export class TriviaquizService {
   }
   calculateScore(form: NgForm, questions: Question[]) {
     this.lastPlayer.username = form.value.username;
+    this.lastPlayer.city = form.value.city;
+    this.lastPlayer.state = form.value.state;
     this.lastPlayer.score = 0;
     this.questionsAndAnswers.questions = questions;
     this.questionsAndAnswers.answers = form.value;
