@@ -1,0 +1,17 @@
+h3 {
+  color: white;
+  margin: 5px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  width: 50vw;
+  height: 50vh;
+  margin: 10px;
+}
+main {
+  display: flex;
+  justify-content: flex-end;
+}

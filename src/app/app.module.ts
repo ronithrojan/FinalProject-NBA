@@ -9,6 +9,7 @@ import { ScoreComponent } from "./score/score.component";
 import { GooglemapComponent } from "./googlemap/googlemap.component";
 import { FormsModule } from "@angular/forms";
 import { HeaderComponent } from './header/header.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './header/header.component';
     QuizComponent,
     ScoreComponent,
     GooglemapComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
