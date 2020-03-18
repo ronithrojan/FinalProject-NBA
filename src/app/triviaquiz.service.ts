@@ -47,4 +47,12 @@ export class TriviaquizService {
   getQuestionsAndAnswers() {
     return this.questionsAndAnswers;
   }
+  getLatLng(location: any) {
+    return this.http.get(`https://maps.googleapis.com/maps/api/geocode/json`, {
+      params: {
+        key: "AIzaSyAj4ST3Ozh-r-n_v4XhnbU2x3rbps0gZ4I",
+        address: `${location.city},${location.state}`
+      }
+    });
+  }
 }
