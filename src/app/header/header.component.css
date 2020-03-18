@@ -1,0 +1,6 @@
+.nav {
+  background: transparent url("../../assets/ncaa-march-madness-tournament.jpg")
+    no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+}
