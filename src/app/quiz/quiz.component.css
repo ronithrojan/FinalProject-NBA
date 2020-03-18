@@ -38,6 +38,11 @@
 .playButton {
   padding: 50px;
   border-radius: 50px;
+  background-image: url("../../assets/pinkletterball.jpg");
+  /* background-color: black; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 .questions {

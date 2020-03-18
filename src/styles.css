@@ -11,3 +11,19 @@ a {
 label {
   color: white;
 }
+
+.input {
+  color: black;
+}
+
+/* .form {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+} */
+
+span {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px;
+}

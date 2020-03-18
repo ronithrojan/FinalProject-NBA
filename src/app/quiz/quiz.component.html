@@ -4,13 +4,13 @@
 </div>
 <div [ngClass]="{ show: userInput }" class="background hide"></div>
 <div *ngIf="show" class="form-container">
-  <form #quizForm="ngForm" (ngSubmit)="submitQuiz(quizForm)">
+  <form class="form" #quizForm="ngForm" (ngSubmit)="submitQuiz(quizForm)">
     <div [ngClass]="{ show: userInput }" class="hide userbio">
-      <label for="username">Name</label>
+      <label class="input" for="username">Name</label>
       <input type="text" id="username" name="username" ngModel />
-      <label for="city">City</label>
+      <label class="input" for="city">City</label>
       <input type="text" id="city" name="city" ngModel />
-      <label for="state">State</label>
+      <label class="input" for="state">State</label>
       <input type="text" id="state" name="state" ngModel />
       <span (click)="hideUserInput()">Let's Go</span>
     </div>
