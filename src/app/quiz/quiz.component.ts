@@ -34,5 +34,9 @@ export class QuizComponent implements OnInit {
   }
   hideUserInput() {
     this.userInput = false;
+    this.startCountdown();
+  }
+  startCountdown() {
+    this.service.startCountdown(60);
   }
 }

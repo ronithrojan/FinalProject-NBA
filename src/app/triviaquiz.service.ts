@@ -55,4 +55,15 @@ export class TriviaquizService {
       }
     });
   }
+  startCountdown(seconds: number) {
+    let counter = seconds;
+    let interval = setInterval(() => {
+      console.log(counter);
+      counter--;
+      if (counter < 0) {
+        clearInterval(interval);
+        console.log(`Ding!`);
+      }
+    }, 1000);
+  }
 }
