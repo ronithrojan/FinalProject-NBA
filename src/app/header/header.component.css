@@ -1,6 +1,11 @@
-.nav {
-  background: transparent url("../../assets/ncaa-march-madness-tournament.jpg")
-    no-repeat center center;
-  background-size: cover;
-  padding: 20px;
+.pic {
+  width: 100vw;
+  height: 25vh;
+  image-rendering: auto;
+  image-rendering: smooth;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
 }

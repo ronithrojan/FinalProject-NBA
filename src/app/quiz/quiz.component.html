@@ -1,5 +1,7 @@
 <app-header></app-header>
-<button (click)="showForm()">Want to Play?</button>
+<div class="play">
+  <button class="playButton" (click)="showForm()">Want to Play?</button>
+</div>
 <div [ngClass]="{ show: userInput }" class="background hide"></div>
 <div *ngIf="show" class="form-container">
   <form #quizForm="ngForm" (ngSubmit)="submitQuiz(quizForm)">
@@ -13,7 +15,7 @@
       <span (click)="hideUserInput()">Let's Go</span>
     </div>
     <div *ngFor="let question of questions; index as i" class="question-group">
-      <p>{{ question.question }}</p>
+      <p class="questions">{{ question.question }}</p>
       <div class="choice">
         <input
           type="radio"
