@@ -1,6 +1,13 @@
 <app-header></app-header>
 <div class="play">
-  <button class="playButton" (click)="showForm()">Want to Play?</button>
+  <button
+    [ngClass]="{ hide: playButton }"
+    class="playButton"
+    (click)="showForm()"
+    (click)="hideButton()"
+  >
+    Want to Play?
+  </button>
 </div>
 <div [ngClass]="{ show: userInput }" class="background hide"></div>
 <div *ngIf="show" class="form-container">

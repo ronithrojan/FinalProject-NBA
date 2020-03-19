@@ -10,6 +10,7 @@ import { NgForm } from "@angular/forms";
 })
 export class QuizComponent implements OnInit {
   userInput: boolean = false;
+  playButton: boolean = false;
   show: boolean = false;
   questions: any;
   seconds: number;
@@ -37,6 +38,11 @@ export class QuizComponent implements OnInit {
     this.userInput = false;
     this.startCountdown();
   }
+
+  hideButton() {
+    this.playButton = false;
+  }
+
   startCountdown(counter: number = 60): void {
     let interval = setInterval(() => {
       this.seconds = counter;

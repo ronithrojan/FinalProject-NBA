@@ -29,20 +29,21 @@
 .play {
   height: 20px;
   width: 100px;
-  margin: -20px -50px;
+  margin: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: -2;
 }
 
 .playButton {
   padding: 50px;
   border-radius: 50px;
-  background-image: url("../../assets/pinkletterball.jpg");
-  /* background-color: black; */
+  background-image: url("../../assets/black-basketball.jpg");
+  background-color: black;
   background-size: contain;
   background-repeat: no-repeat;
-  color: white;
+  border: 1px solid black;
 }
 
 .questions {
