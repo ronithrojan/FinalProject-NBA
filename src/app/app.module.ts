@@ -8,8 +8,8 @@ import { QuizComponent } from "./quiz/quiz.component";
 import { ScoreComponent } from "./score/score.component";
 import { GooglemapComponent } from "./googlemap/googlemap.component";
 import { FormsModule } from "@angular/forms";
-import { HeaderComponent } from './header/header.component';
-import { AboutusComponent } from './aboutus/aboutus.component';
+import { HeaderComponent } from "./header/header.component";
+import { AboutusComponent } from "./aboutus/aboutus.component";
 
 @NgModule({
   declarations: [

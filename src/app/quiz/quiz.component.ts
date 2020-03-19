@@ -12,6 +12,7 @@ export class QuizComponent implements OnInit {
   userInput: boolean = false;
   show: boolean = false;
   questions: any;
+  seconds: number;
   constructor(private service: TriviaquizService, private router: Router) {}
 
   ngOnInit(): void {
@@ -36,7 +37,14 @@ export class QuizComponent implements OnInit {
     this.userInput = false;
     this.startCountdown();
   }
-  startCountdown() {
-    this.service.startCountdown(60);
+  startCountdown(counter: number = 60): void {
+    let interval = setInterval(() => {
+      this.seconds = counter;
+      counter--;
+      if (counter < 0) {
+        clearInterval(interval);
+        console.log(`Ding!`);
+      }
+    }, 1000);
   }
 }

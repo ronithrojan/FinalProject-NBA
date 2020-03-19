@@ -1,8 +1,7 @@
 .pic {
-  width: 100vw;
-  height: 25vh;
-  image-rendering: auto;
-  image-rendering: smooth;
+  /* width: 100%; */
+  height: 150px;
+  object-fit: cover;
 }
 
 ul {

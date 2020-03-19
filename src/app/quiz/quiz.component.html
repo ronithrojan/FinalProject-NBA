@@ -14,6 +14,7 @@
       <input type="text" id="state" name="state" ngModel />
       <span (click)="hideUserInput()">Let's Go</span>
     </div>
+    <h2 class="timer">{{ seconds }} seconds</h2>
     <div *ngFor="let question of questions; index as i" class="question-group">
       <p class="questions">{{ question.question }}</p>
       <div class="choice">
