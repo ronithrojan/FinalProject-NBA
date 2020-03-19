@@ -1,10 +1,9 @@
 <app-header></app-header>
 <div class="play">
   <button
-    [ngClass]="{ hide: playButton }"
+    [ngClass]="{ hide: !playButton }"
     class="playButton"
     (click)="showForm()"
-    (click)="hideButton()"
   >
     Want to Play?
   </button>
