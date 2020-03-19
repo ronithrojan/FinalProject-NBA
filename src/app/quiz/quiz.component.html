@@ -4,6 +4,10 @@
   to get your March Madness fix, see if you can answer these questions to become
   ballers like us! Catch the ball to start the game!
 </p>
+<div class="teams">
+  <button class="spartan" (click)="pickedTeam('spartan')"></button>
+  <button class="uofm" (click)="pickedTeam('uofm')"></button>
+</div>
 <div class="play">
   <button
     [ngClass]="{ hide: !playButton }"
@@ -13,7 +17,12 @@
 </div>
 <div [ngClass]="{ show: userInput }" class="background hide"></div>
 <div *ngIf="show" class="form-container">
-  <form class="form" #quizForm="ngForm" (ngSubmit)="submitQuiz(quizForm)">
+  <form
+    class="form"
+    #quizForm="ngForm"
+    (ngSubmit)="submitQuiz(quizForm)"
+    [ngClass]="teamName"
+  >
     <div [ngClass]="{ show: userInput }" class="hide userbio">
       <label class="input" for="username">Name</label>
       <input type="text" id="username" name="username" ngModel required />

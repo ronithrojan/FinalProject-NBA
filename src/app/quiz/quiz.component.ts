@@ -15,6 +15,7 @@ export class QuizComponent implements OnInit {
   show: boolean = false;
   questions: any;
   seconds: number;
+  teamName: string = "";
 
   constructor(private service: TriviaquizService, private router: Router) {}
 
@@ -51,5 +52,9 @@ export class QuizComponent implements OnInit {
         console.log(`Ding!`);
       }
     }, 1000);
+  }
+
+  pickedTeam(team: string): void {
+    this.teamName = team;
   }
 }

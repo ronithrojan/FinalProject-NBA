@@ -111,3 +111,30 @@
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
+
+button.spartan {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://brand.msu.edu/_files/images/spartan-helmet-og.png") no-repeat
+    center center;
+  background-size: cover;
+}
+
+button.uofm {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Michigan_Wolverines_Logo.svg/1280px-Michigan_Wolverines_Logo.svg.png")
+    no-repeat center center;
+  background-size: cover;
+}
+
+.spartan {
+  background-color: green;
+}
+
+.uofm {
+  background-color: blue;
+  color: yellow;
+}
