@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { TriviaquizService } from "../triviaquiz.service";
 import { Router } from "@angular/router";
 import { NgForm } from "@angular/forms";
+import { LastPlayer } from "../interfaces/last-player";
 
 @Component({
   selector: "app-quiz",
@@ -14,6 +15,7 @@ export class QuizComponent implements OnInit {
   show: boolean = false;
   questions: any;
   seconds: number;
+
   constructor(private service: TriviaquizService, private router: Router) {}
 
   ngOnInit(): void {

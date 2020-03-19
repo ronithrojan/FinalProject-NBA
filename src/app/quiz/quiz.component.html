@@ -76,7 +76,8 @@
       </select>
       <span (click)="hideUserInput()">Let's Go</span>
     </div>
-    <h2 class="timer">{{ seconds }} seconds</h2>
+    <p class="timer">The name here or their team logo here</p>
+    <h2 class="timer">00:{{ seconds }}</h2>
     <div *ngFor="let question of questions; index as i" class="question-group">
       <p class="questions">{{ question.question }}</p>
       <div class="choice">
