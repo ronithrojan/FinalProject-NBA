@@ -1,3 +1,39 @@
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  10% {
+    transform: translate3d(0, 200px, 0);
+  }
+  20% {
+    transform: translate3d(0, 0, 0);
+  }
+  30% {
+    transform: translate3d(0, 180px, 0);
+  }
+  40% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 130px, 0);
+  }
+  60% {
+    transform: translate3d(0, 0, 0);
+  }
+  70% {
+    transform: translate3d(0, 90px, 0);
+  }
+  80% {
+    transform: translate3d(0, 0, 0);
+  }
+  90% {
+    transform: translate3d(0, 40px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .background {
   position: fixed;
   height: 100vh;
@@ -27,13 +63,18 @@
 }
 
 .play {
-  height: 20px;
-  width: 100px;
-  margin: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 50px 0px;
   z-index: -2;
+  animation: bounce 5s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+}
+
+.play-p {
+  color: white;
 }
 
 .playButton {
