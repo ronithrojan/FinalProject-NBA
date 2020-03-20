@@ -102,6 +102,7 @@
 .questions {
   color: white;
 }
+
 .timer {
   color: red;
   border: 3px red solid;
@@ -113,6 +114,7 @@
 }
 
 .teams {
+  margin: 5px;
   overflow: auto;
   white-space: nowrap;
 }
@@ -125,6 +127,8 @@ button.spartan {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 
 button.uofm {
@@ -135,6 +139,8 @@ button.uofm {
     center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.unc {
   width: 100px;
@@ -144,6 +150,8 @@ button.unc {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.uconn {
   width: 100px;
@@ -153,6 +161,8 @@ button.uconn {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.wmu {
   width: 100px;
@@ -162,6 +172,8 @@ button.wmu {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.nd {
   width: 100px;
@@ -171,6 +183,8 @@ button.nd {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.fsu {
   width: 100px;
@@ -180,6 +194,8 @@ button.fsu {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.cmu {
   width: 100px;
@@ -189,6 +205,8 @@ button.cmu {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.gonz {
   width: 100px;
@@ -198,6 +216,8 @@ button.gonz {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.kans {
   width: 100px;
@@ -207,6 +227,8 @@ button.kans {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.dayt {
   width: 100px;
@@ -216,6 +238,8 @@ button.dayt {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.sds {
   width: 100px;
@@ -225,6 +249,8 @@ button.sds {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.emu {
   width: 100px;
@@ -234,6 +260,8 @@ button.emu {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.duke {
   width: 100px;
@@ -243,6 +271,8 @@ button.duke {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 button.lville {
   width: 100px;
@@ -252,7 +282,10 @@ button.lville {
     no-repeat center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
+
 button.wayne {
   width: 100px;
   height: 100px;
@@ -261,6 +294,8 @@ button.wayne {
     center center;
   background-size: cover;
   border: none;
+  border: 1px solid white;
+  margin: 5px;
 }
 
 .spartan {
