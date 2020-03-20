@@ -116,7 +116,7 @@ button.spartan {
   width: 100px;
   height: 100px;
   background: transparent
-    url("https://pngimage.net/wp-content/uploads/2018/06/logo-msu-png-2.png")
+    url("https://s3media.247sports.com/Uploads/Assets/976/472/4472976.png")
     no-repeat center center;
   background-size: cover;
   border: none;
@@ -126,7 +126,7 @@ button.uofm {
   width: 100px;
   height: 100px;
   background: transparent
-    url("https://static.wixstatic.com/media/6b6ad5_4aa13b70fd974879beb388612afa7003~mv2_d_2000_1266_s_2.png")
+    url("https://www.clipartkey.com/mpngs/m/31-311422_michigan-wolverines-vintage-logo-clipart-vintage-michigan-wolverines.png")
     no-repeat center center;
   background-size: cover;
   border: none;
@@ -149,11 +149,11 @@ button.uconn {
   background-size: cover;
   border: none;
 }
-button.bc {
+button.wmu {
   width: 100px;
   height: 100px;
   background: transparent
-    url("https://lh3.googleusercontent.com/proxy/ntOneslPywgiIJXK24Ntak97CK0RCP96EAxigpNgSmcd76yNs1mf0CV0lDIK7BpfUxZBYCEeKc3KqihvEsYoLXTssABfMUARPq53MLksSrREY7PcgEwXVhZo")
+    url("https://banner2.cleanpng.com/20180412/sew/kisspng-western-michigan-university-western-michigan-bronc-western-5acffd4e4e9497.7850945515235802383219.jpg")
     no-repeat center center;
   background-size: cover;
   border: none;
@@ -173,6 +173,86 @@ button.fsu {
   background: transparent
     url("https://i.ya-webdesign.com/images/florida-state-university-logo-png-7.png")
     no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.cmu {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://pngimage.net/wp-content/uploads/2018/05/cmu-png-1.png")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.gonz {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://pngimage.net/wp-content/uploads/2018/05/bulldogs-logo-png-4.png")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.kans {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://pngimage.net/wp-content/uploads/2018/06/kansas-logo-png-8.png")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.dayt {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Dayton_Flyers_logo.svg/1200px-Dayton_Flyers_logo.svg.png")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.sds {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://pngimage.net/wp-content/uploads/2018/06/san-diego-state-logo-png-1.png")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.bayl {
+  width: 100px;
+  height: 100px;
+  background: transparent url("https://pbs.twimg.com/media/DvdtOisVAAArPVJ.jpg")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.duke {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://pngimage.net/wp-content/uploads/2018/05/duke-university-logo-png-4.png")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.lville {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/1200px-Louisville_Cardinals_logo.svg.png")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.wayne {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://mac.wayne.edu/images/solidgreenwarriorw-300.png") no-repeat
+    center center;
   background-size: cover;
   border: none;
 }
@@ -202,5 +282,45 @@ button.fsu {
 }
 .fsu {
   background-color: maroon;
+  color: gold;
+}
+.cmu {
+  background-color: maroon;
+  color: gold;
+}
+.gonz {
+  background-color: blue;
+  color: orange;
+}
+.kans {
+  background-color: navy;
+  color: red;
+}
+.dayt {
+  background-color: #9bddff;
+  color: red;
+}
+.sds {
+  background-color: #ff2400;
+  color: black;
+}
+.bayl {
+  background-color: green;
+  color: gold;
+}
+.duke {
+  background-color: #00009c;
+  color: whitesmoke;
+}
+.lville {
+  background-color: black;
+  color: #c41e3a;
+}
+.wayne {
+  background-color: green;
+  color: gold;
+}
+.wmu {
+  background-color: brown;
   color: gold;
 }
