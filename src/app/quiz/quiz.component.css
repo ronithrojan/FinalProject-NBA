@@ -111,6 +111,12 @@
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
+/* .teams {
+  display: inline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+} */
 
 button.spartan {
   width: 100px;
@@ -126,8 +132,8 @@ button.uofm {
   width: 100px;
   height: 100px;
   background: transparent
-    url("https://www.clipartkey.com/mpngs/m/31-311422_michigan-wolverines-vintage-logo-clipart-vintage-michigan-wolverines.png")
-    no-repeat center center;
+    url("https://i.ya-webdesign.com/images/michigan-m-png-8.png") no-repeat
+    center center;
   background-size: cover;
   border: none;
 }
@@ -153,7 +159,7 @@ button.wmu {
   width: 100px;
   height: 100px;
   background: transparent
-    url("https://banner2.cleanpng.com/20180412/sew/kisspng-western-michigan-university-western-michigan-bronc-western-5acffd4e4e9497.7850945515235802383219.jpg")
+    url("https://wmich.edu/sites/default/files/attachments/u5/2018/W-gold-brown.png")
     no-repeat center center;
   background-size: cover;
   border: none;
@@ -221,10 +227,11 @@ button.sds {
   background-size: cover;
   border: none;
 }
-button.bayl {
+button.emu {
   width: 100px;
   height: 100px;
-  background: transparent url("https://pbs.twimg.com/media/DvdtOisVAAArPVJ.jpg")
+  background: transparent
+    url("https://www.emich.edu/communications/images/logos-official/stacked-justified-green.png?v=2020-02-03T14:39:37Z")
     no-repeat center center;
   background-size: cover;
   border: none;
@@ -304,9 +311,9 @@ button.wayne {
   background-color: #ff2400;
   color: black;
 }
-.bayl {
+.emu {
   background-color: green;
-  color: gold;
+  color: whitesmoke;
 }
 .duke {
   background-color: #00009c;
