@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div>
+<div class="results">
   <h3>Results!</h3>
   <p>Name: {{ lastPlayer?.username }}</p>
   <p>City: {{ lastPlayer?.city }}</p>
@@ -22,7 +22,7 @@
     >
   </p>
 </div>
-<ol>
+<ol class="hiscores">
   <h3>Hi-Scores</h3>
   <li *ngFor="let score of scores">
     <p>
@@ -31,7 +31,7 @@
     </p>
   </li>
 </ol>
-<section>
+<section class="googlemap">
   <p>See where your competitors are playing from</p>
-  <button routerLink="/googlemap">Click Me!</button>
+  <button class="map" routerLink="/googlemap">See Map</button>
 </section>

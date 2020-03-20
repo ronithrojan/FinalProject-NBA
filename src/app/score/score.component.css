@@ -15,3 +15,33 @@ div {
   border: 1px solid lightblue;
   margin: 5px;
 }
+.results {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border: none;
+}
+.hiscores {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border: none;
+}
+.googlemap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  font-size: 18px;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  height: 30px;
+  background-color: orange;
+  color: black;
+}
