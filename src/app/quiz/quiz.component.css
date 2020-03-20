@@ -111,12 +111,11 @@
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
-/* .teams {
-  display: inline;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow-x: scroll;
-} */
+
+.teams {
+  overflow: auto;
+  white-space: nowrap;
+}
 
 button.spartan {
   width: 100px;
