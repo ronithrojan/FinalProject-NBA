@@ -7,27 +7,38 @@ p {
   border: none;
 }
 h3 {
+  display: flex;
+  align-self: center;
   color: blue;
   margin: 5px;
 }
 
 div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
   border: 1px solid lightblue;
   margin: 5px;
 }
 .results {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   border: none;
+}
+.gifs {
+  /* display: flex; */
+  object-fit: contain;
+  height: 400px;
+  width: 400px;
 }
 .hiscores {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  border: none;
+  border: 1px solid lightblue;
 }
 .googlemap {
   display: flex;
@@ -40,8 +51,10 @@ div {
 .map {
   display: flex;
   justify-content: center;
-  border-radius: 30px;
-  height: 30px;
+  align-self: center;
+  width: 40px;
+  border-radius: 40px;
+  height: 40px;
   background-color: orange;
   color: black;
 }

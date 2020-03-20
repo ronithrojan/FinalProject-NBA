@@ -1,26 +1,28 @@
 <app-header></app-header>
-<div class="results">
-  <h3>Results!</h3>
-  <p>Name: {{ lastPlayer?.username }}</p>
-  <p>City: {{ lastPlayer?.city }}</p>
-  <p>State: {{ lastPlayer?.state }}</p>
-  <p>Your Score: {{ lastPlayer?.score }}</p>
-</div>
-<div class="gifs">
-  <iframe
-    src="https://giphy.com/embed/3o7abIileRivlGr8Nq"
-    width="480"
-    height="271"
-    frameBorder="0"
-    class="giphy-embed"
-    allowFullScreen
-  ></iframe>
-  <p>
-    <a
-      href="https://giphy.com/gifs/goheels-unc-tar-heels-tarheels-3o7abIileRivlGr8Nq"
-      >via GIPHY</a
-    >
-  </p>
+<div>
+  <div class="results">
+    <h3>Results!</h3>
+    <p>Name: {{ lastPlayer?.username }}</p>
+    <p>City: {{ lastPlayer?.city }}</p>
+    <p>State: {{ lastPlayer?.state }}</p>
+    <p>Your Score: {{ lastPlayer?.score }}</p>
+  </div>
+  <div class="gifs">
+    <iframe
+      src="https://giphy.com/embed/3o7abIileRivlGr8Nq"
+      width="480"
+      height="271"
+      frameBorder="0"
+      class="giphy-embed"
+      allowFullScreen
+    ></iframe>
+    <p>
+      <a
+        href="https://giphy.com/gifs/goheels-unc-tar-heels-tarheels-3o7abIileRivlGr8Nq"
+        >via GIPHY</a
+      >
+    </p>
+  </div>
 </div>
 <ol class="hiscores">
   <h3>Hi-Scores</h3>
@@ -32,6 +34,6 @@
   </li>
 </ol>
 <section class="googlemap">
-  <p>See where your competitors are playing from</p>
+  <p>See the location of other ballers!</p>
   <button class="map" routerLink="/googlemap">See Map</button>
 </section>
