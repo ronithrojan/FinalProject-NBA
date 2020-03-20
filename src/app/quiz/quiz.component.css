@@ -116,18 +116,65 @@ button.spartan {
   width: 100px;
   height: 100px;
   background: transparent
-    url("https://brand.msu.edu/_files/images/spartan-helmet-og.png") no-repeat
-    center center;
+    url("https://pngimage.net/wp-content/uploads/2018/06/logo-msu-png-2.png")
+    no-repeat center center;
   background-size: cover;
+  border: none;
 }
 
 button.uofm {
   width: 100px;
   height: 100px;
   background: transparent
-    url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Michigan_Wolverines_Logo.svg/1280px-Michigan_Wolverines_Logo.svg.png")
+    url("https://static.wixstatic.com/media/6b6ad5_4aa13b70fd974879beb388612afa7003~mv2_d_2000_1266_s_2.png")
     no-repeat center center;
   background-size: cover;
+  border: none;
+}
+button.unc {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://cdn.bleacherreport.net/images/team_logos/328x328/unc_basketball.png")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.uconn {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://patch.com/img/cdn/users/162709/2013/03/raw/df968cc7a662a486858f40f237e89ba2.jpg")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.bc {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://lh3.googleusercontent.com/proxy/ntOneslPywgiIJXK24Ntak97CK0RCP96EAxigpNgSmcd76yNs1mf0CV0lDIK7BpfUxZBYCEeKc3KqihvEsYoLXTssABfMUARPq53MLksSrREY7PcgEwXVhZo")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.nd {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://upload.wikimedia.org/wikipedia/en/thumb/9/91/Notre_Dame_Leprechaun_logo.svg/1200px-Notre_Dame_Leprechaun_logo.svg.png")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
+}
+button.fsu {
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://i.ya-webdesign.com/images/florida-state-university-logo-png-7.png")
+    no-repeat center center;
+  background-size: cover;
+  border: none;
 }
 
 .spartan {
@@ -137,4 +184,23 @@ button.uofm {
 .uofm {
   background-color: blue;
   color: yellow;
+}
+.unc {
+  background-color: lightblue;
+}
+.uconn {
+  background-color: navy;
+  color: gray;
+}
+.bc {
+  background-color: #501315;
+  color: gold;
+}
+.nd {
+  background-color: navy;
+  color: gold;
+}
+.fsu {
+  background-color: maroon;
+  color: gold;
 }
