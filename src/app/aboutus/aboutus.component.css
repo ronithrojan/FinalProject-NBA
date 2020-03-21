@@ -4,19 +4,66 @@ h3 {
 }
 
 div {
-  display: flex;
-  justify-content: center;
   border: 1px solid white;
   word-wrap: break-word;
-  width: 50vw;
-  height: 75vh;
   margin: 10px;
 }
 main {
+  padding: 15px;
   display: flex;
   justify-content: flex-end;
 }
 
 p {
   color: white;
+}
+
+section {
+  margin: 15px;
+  border: 1px solid white;
+}
+
+aside {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.baller01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/IMG-4672.jpg");
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid lightblue;
+}
+
+.baller02 {
+  background-image: url("../../assets/IMG_5868.jpg");
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.baller03 {
+  background-image: url("../../assets/IMG_1471.jpeg");
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
