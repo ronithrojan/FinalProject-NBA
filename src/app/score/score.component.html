@@ -7,7 +7,7 @@
     <p>State: {{ lastPlayer?.state }}</p>
     <p>Your Score: {{ lastPlayer?.score }}</p>
   </div>
-  <div class="gifs" *ngIf="showGif()">
+  <div class="gifs">
     <div class="high" *ngIf="showHigh">
       <iframe
         src="https://giphy.com/embed/3o7abIileRivlGr8Nq"
@@ -59,10 +59,13 @@
 <ol class="hiscores">
   <h3>Hi-Scores</h3>
   <li *ngFor="let score of scores">
-    <p>
-      Player: {{ score?.username }} City: {{ score?.city }} State:
-      {{ score?.state }} Score: {{ score?.score }}
-    </p>
+    <div class="scoreBox">
+      <p class="scoreInfo">
+        <span>Player: </span>{{ score?.username }} <span>City:</span
+        >{{ score?.city }} <span>State: </span> {{ score?.state }}
+        <span>Score: </span> {{ score?.score }}
+      </p>
+    </div>
   </li>
 </ol>
 <section class="googlemap">

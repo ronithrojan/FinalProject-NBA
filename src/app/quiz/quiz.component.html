@@ -1,9 +1,11 @@
 <app-header></app-header>
-<p class="play-p" [ngClass]="{ hide: !playButton }">
-  Are you bummed that the NCAA tournament is cancelled!? Because we are... So,
-  to get your March Madness fix, see if you can answer these questions to become
-  ballers like us! Pick your team and catch the ball to start the game!
-</p>
+<div class="introBox">
+  <p class="play-p" [ngClass]="{ hide: !playButton }">
+    Are you bummed that the NCAA tournament is cancelled!? Because we are... So,
+    to get your March Madness fix, see if you can answer these questions to
+    become ballers like us! Pick your team and catch the ball to start the game!
+  </p>
+</div>
 <div class="team-container">
   <div class="teams">
     <button class="spartan" (click)="pickedTeam('spartan')"></button>

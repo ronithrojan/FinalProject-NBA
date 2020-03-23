@@ -103,6 +103,14 @@
   color: white;
 }
 
+.introBox {
+  border: 3px solid lightblue;
+  width: 50%;
+  height: 50%;
+  /* display: flex;
+  justify-content: center; */
+}
+
 .timer {
   color: red;
   border: 3px red solid;

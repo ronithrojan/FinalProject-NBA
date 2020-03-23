@@ -22,13 +22,16 @@ export class ScoreComponent implements OnInit {
       console.log(response);
     });
     this.lastPlayer = this.service.getLastPlayer();
+    this.showGif();
   }
 
-  showGif(): any {
-    if (this.scores <= 4) {
-      return this.showLow;
-    } else if (this.scores > 4 && this.scores <= 7) {
-      return this.showAverage;
-    } else return this.showHigh;
+  showGif(): void {
+    if (this.lastPlayer.score <= 4) {
+      this.showLow = true;
+    } else if (this.lastPlayer.score <= 7) {
+      this.showAverage = true;
+    } else {
+      this.showHigh = true;
+    }
   }
 }

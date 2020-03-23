@@ -58,3 +58,19 @@ div {
   background-color: orange;
   color: black;
 }
+
+span {
+  color: blue;
+}
+
+.scoreBox {
+  width: 500px;
+  align-items: center;
+  padding: 10px;
+}
+
+.hiscores {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
