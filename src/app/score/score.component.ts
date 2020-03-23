@@ -10,6 +10,9 @@ import { LastPlayer } from "../interfaces/last-player";
 })
 export class ScoreComponent implements OnInit {
   scores: any;
+  showHigh: boolean = false;
+  showAverage: boolean = false;
+  showLow: boolean = false;
   lastPlayer: LastPlayer;
   constructor(private service: TriviaquizService) {}
 
@@ -19,5 +22,13 @@ export class ScoreComponent implements OnInit {
       console.log(response);
     });
     this.lastPlayer = this.service.getLastPlayer();
+  }
+
+  showGif(): any {
+    if (this.scores <= 4) {
+      return this.showLow;
+    } else if (this.scores > 4 && this.scores <= 7) {
+      return this.showAverage;
+    } else return this.showHigh;
   }
 }

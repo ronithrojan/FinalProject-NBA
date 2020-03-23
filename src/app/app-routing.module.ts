@@ -11,9 +11,8 @@ const routes: Routes = [
   { path: "quiz", component: QuizComponent },
   { path: "scores", component: ScoreComponent },
   { path: "googlemap", component: GooglemapComponent },
-  { path: "header", component: HeaderComponent },
   { path: "aboutus", component: AboutusComponent },
-  { path: "**", component: QuizComponent }
+  { path: "**", redirectTo: "/quiz", pathMatch: "full" }
 ];
 
 @NgModule({

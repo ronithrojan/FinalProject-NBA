@@ -7,21 +7,53 @@
     <p>State: {{ lastPlayer?.state }}</p>
     <p>Your Score: {{ lastPlayer?.score }}</p>
   </div>
-  <div class="gifs">
-    <iframe
-      src="https://giphy.com/embed/3o7abIileRivlGr8Nq"
-      width="480"
-      height="271"
-      frameBorder="0"
-      class="giphy-embed"
-      allowFullScreen
-    ></iframe>
-    <p>
-      <a
-        href="https://giphy.com/gifs/goheels-unc-tar-heels-tarheels-3o7abIileRivlGr8Nq"
-        >via GIPHY</a
-      >
-    </p>
+  <div class="gifs" *ngIf="showGif()">
+    <div class="high" *ngIf="showHigh">
+      <iframe
+        src="https://giphy.com/embed/3o7abIileRivlGr8Nq"
+        width="480"
+        height="271"
+        frameBorder="0"
+        class="giphy-embed"
+        allowFullScreen
+      ></iframe>
+      <p>
+        <a
+          href="https://giphy.com/gifs/goheels-unc-tar-heels-tarheels-3o7abIileRivlGr8Nq"
+          >via GIPHY</a
+        >
+      </p>
+    </div>
+    <div class="average" *ngIf="showAverage">
+      <iframe
+        src="https://giphy.com/embed/3o7WIwpBjAPFQR2gpO"
+        width="480"
+        height="335"
+        frameBorder="0"
+        class="giphy-embed"
+        allowFullScreen
+      ></iframe>
+      <p>
+        <a href="https://giphy.com/gifs/basketball-sport-3o7WIwpBjAPFQR2gpO"
+          >via GIPHY</a
+        >
+      </p>
+    </div>
+    <div class="low" *ngIf="showLow">
+      <iframe
+        src="https://giphy.com/embed/t5qY8FyyM85a0"
+        width="480"
+        height="264"
+        frameBorder="0"
+        class="giphy-embed"
+        allowFullScreen
+      ></iframe>
+      <p>
+        <a href="https://giphy.com/gifs/golden-state-warriors-t5qY8FyyM85a0"
+          >via GIPHY</a
+        >
+      </p>
+    </div>
   </div>
 </div>
 <ol class="hiscores">

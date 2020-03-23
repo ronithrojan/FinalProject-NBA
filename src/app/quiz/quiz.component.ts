@@ -43,7 +43,7 @@ export class QuizComponent implements OnInit {
     this.startCountdown();
   }
 
-  startCountdown(counter: number = 60): void {
+  startCountdown(counter: number = 90): void {
     let interval = setInterval(() => {
       this.seconds = counter;
       counter--;
