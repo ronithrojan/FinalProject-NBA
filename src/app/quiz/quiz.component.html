@@ -1,31 +1,15 @@
 <app-header></app-header>
-<div class="introBox">
-  <p class="play-p" [ngClass]="{ hide: !playButton }">
-    Are you bummed that the NCAA tournament is cancelled!? Because we are... So,
-    to get your March Madness fix, see if you can answer these questions to
-    become ballers like us! Pick your team and catch the ball to start the game!
-  </p>
-</div>
-<div class="team-container">
-  <div class="teams">
-    <button class="spartan" (click)="pickedTeam('spartan')"></button>
-    <button class="uofm" (click)="pickedTeam('uofm')"></button>
-    <button class="unc" (click)="pickedTeam('unc')"></button>
-    <button class="uconn" (click)="pickedTeam('uconn')"></button>
-    <button class="wmu" (click)="pickedTeam('wmu')"></button>
-    <button class="nd" (click)="pickedTeam('nd')"></button>
-    <button class="fsu" (click)="pickedTeam('fsu')"></button>
-    <button class="cmu" (click)="pickedTeam('cmu')"></button>
-    <button class="gonz" (click)="pickedTeam('gonz')"></button>
-    <button class="kans" (click)="pickedTeam('kans')"></button>
-    <button class="dayt" (click)="pickedTeam('dayt')"></button>
-    <button class="sds" (click)="pickedTeam('sds')"></button>
-    <button class="emu" (click)="pickedTeam('emu')"></button>
-    <button class="duke" (click)="pickedTeam('duke')"></button>
-    <button class="lville" (click)="pickedTeam('lville')"></button>
-    <button class="wayne" (click)="pickedTeam('wayne')"></button>
+<div class="container">
+  <div class="introBox">
+    <p class="play-p" [ngClass]="{ hide: !playButton }">
+      Are you bummed that the NCAA tournament is cancelled!? Because we are...
+      So, to get your March Madness fix, see if you can answer these questions
+      to become ballers like us! Pick your team and catch the ball to start the
+      game!
+    </p>
   </div>
 </div>
+
 <div class="play">
   <button
     [ngClass]="{ hide: !playButton }"
@@ -42,66 +26,88 @@
     [ngClass]="teamName"
   >
     <div [ngClass]="{ show: userInput }" class="hide userbio">
-      <label class="input" for="username">Name</label>
-      <input type="text" id="username" name="username" ngModel required />
-      <label class="input" for="city">City</label>
-      <input type="text" id="city" name="city" ngModel required />
-      <label class="input" for="state">State</label>
-      <select id="state" name="state" ngModel required>
-        <option value="">Select your State</option>
-        <option value="AL">Alabama</option>
-        <option value="AK">Alaska</option>
-        <option value="AZ">Arizona</option>
-        <option value="AR">Arkansas</option>
-        <option value="CA">California</option>
-        <option value="CO">Colorado</option>
-        <option value="CT">Connecticut</option>
-        <option value="DE">Delaware</option>
-        <option value="DC">District Of Columbia</option>
-        <option value="FL">Florida</option>
-        <option value="GA">Georgia</option>
-        <option value="HI">Hawaii</option>
-        <option value="ID">Idaho</option>
-        <option value="IL">Illinois</option>
-        <option value="IN">Indiana</option>
-        <option value="IA">Iowa</option>
-        <option value="KS">Kansas</option>
-        <option value="KY">Kentucky</option>
-        <option value="LA">Louisiana</option>
-        <option value="ME">Maine</option>
-        <option value="MD">Maryland</option>
-        <option value="MA">Massachusetts</option>
-        <option value="MI">Michigan</option>
-        <option value="MN">Minnesota</option>
-        <option value="MS">Mississippi</option>
-        <option value="MO">Missouri</option>
-        <option value="MT">Montana</option>
-        <option value="NE">Nebraska</option>
-        <option value="NV">Nevada</option>
-        <option value="NH">New Hampshire</option>
-        <option value="NJ">New Jersey</option>
-        <option value="NM">New Mexico</option>
-        <option value="NY">New York</option>
-        <option value="NC">North Carolina</option>
-        <option value="ND">North Dakota</option>
-        <option value="OH">Ohio</option>
-        <option value="OK">Oklahoma</option>
-        <option value="OR">Oregon</option>
-        <option value="PA">Pennsylvania</option>
-        <option value="RI">Rhode Island</option>
-        <option value="SC">South Carolina</option>
-        <option value="SD">South Dakota</option>
-        <option value="TN">Tennessee</option>
-        <option value="TX">Texas</option>
-        <option value="UT">Utah</option>
-        <option value="VT">Vermont</option>
-        <option value="VA">Virginia</option>
-        <option value="WA">Washington</option>
-        <option value="WV">West Virginia</option>
-        <option value="WI">Wisconsin</option>
-        <option value="WY">Wyoming</option>
-      </select>
-      <span (click)="hideUserInput()">Let's Go</span>
+      <div class="userbio-form">
+        <label class="input" for="username">Name</label>
+        <input type="text" id="username" name="username" ngModel required />
+        <label class="input" for="city">City</label>
+        <input type="text" id="city" name="city" ngModel required />
+        <label class="input" for="state">State</label>
+        <select id="state" name="state" ngModel required>
+          <option value="">Select your State</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District Of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
+      </div>
+      <div class="team-container">
+        <div class="teams">
+          <div class="spartan" (click)="pickedTeam('spartan')"></div>
+          <div class="uofm" (click)="pickedTeam('uofm')"></div>
+          <div class="unc" (click)="pickedTeam('unc')"></div>
+          <div class="uconn" (click)="pickedTeam('uconn')"></div>
+          <div class="wmu" (click)="pickedTeam('wmu')"></div>
+          <div class="nd" (click)="pickedTeam('nd')"></div>
+          <div class="fsu" (click)="pickedTeam('fsu')"></div>
+          <div class="cmu" (click)="pickedTeam('cmu')"></div>
+          <div class="gonz" (click)="pickedTeam('gonz')"></div>
+          <div class="kans" (click)="pickedTeam('kans')"></div>
+          <div class="dayt" (click)="pickedTeam('dayt')"></div>
+          <div class="sds" (click)="pickedTeam('sds')"></div>
+          <div class="emu" (click)="pickedTeam('emu')"></div>
+          <div class="duke" (click)="pickedTeam('duke')"></div>
+          <div class="lville" (click)="pickedTeam('lville')"></div>
+          <div class="wayne" (click)="pickedTeam('wayne')"></div>
+        </div>
+      </div>
+      <span class="go-button" (click)="hideUserInput()">Let's Go</span>
     </div>
     <p class="timer">The name here or their team logo here</p>
     <h2 class="timer">00:{{ seconds }}</h2>

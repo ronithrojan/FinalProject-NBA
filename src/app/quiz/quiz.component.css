@@ -59,12 +59,28 @@
   left: 0;
 }
 .userbio {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  width: 50%;
+  height: 300px;
   background-color: white;
   z-index: 2;
   position: relative;
+  padding: 10px;
 }
+.userbio-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* .form-container {
+  display: flex;
+  justify-content: center;
+} */
+/* div.hide.userbio.show {
+  display: flex;
+  justify-content: center;
+} */
 
 .hide {
   display: none;
@@ -88,6 +104,10 @@
 .play-p {
   color: white;
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
 
 .playButton {
   padding: 50px;
@@ -98,6 +118,14 @@
   background-repeat: no-repeat;
   border: 1px solid black;
 }
+.go-button {
+  display: flex;
+  justify-content: center;
+  /* width: 50px; */
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px;
+}
 
 .questions {
   color: white;
@@ -107,8 +135,6 @@
   border: 3px solid lightblue;
   width: 50%;
   height: 50%;
-  /* display: flex;
-  justify-content: center; */
 }
 
 .timer {
@@ -122,185 +148,190 @@
 }
 
 .teams {
+  width: 100%;
+  flex-direction: row;
   margin: 5px;
-  overflow: auto;
+  overflow-x: auto;
+
   white-space: nowrap;
 }
-
-button.spartan {
+.teams div {
+  display: inline-block;
+}
+div.spartan {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://s3media.247sports.com/Uploads/Assets/976/472/4472976.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
 
-button.uofm {
+div.uofm {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://i.ya-webdesign.com/images/michigan-m-png-8.png") no-repeat
     center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.unc {
+div.unc {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://cdn.bleacherreport.net/images/team_logos/328x328/unc_basketball.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.uconn {
+div.uconn {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://patch.com/img/cdn/users/162709/2013/03/raw/df968cc7a662a486858f40f237e89ba2.jpg")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.wmu {
+div.wmu {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://wmich.edu/sites/default/files/attachments/u5/2018/W-gold-brown.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.nd {
+div.nd {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://upload.wikimedia.org/wikipedia/en/thumb/9/91/Notre_Dame_Leprechaun_logo.svg/1200px-Notre_Dame_Leprechaun_logo.svg.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.fsu {
+div.fsu {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://i.ya-webdesign.com/images/florida-state-university-logo-png-7.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.cmu {
+div.cmu {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://pngimage.net/wp-content/uploads/2018/05/cmu-png-1.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.gonz {
+div.gonz {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://pngimage.net/wp-content/uploads/2018/05/bulldogs-logo-png-4.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.kans {
+div.kans {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://pngimage.net/wp-content/uploads/2018/06/kansas-logo-png-8.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.dayt {
+div.dayt {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Dayton_Flyers_logo.svg/1200px-Dayton_Flyers_logo.svg.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.sds {
+div.sds {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://pngimage.net/wp-content/uploads/2018/06/san-diego-state-logo-png-1.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.emu {
+div.emu {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://www.emich.edu/communications/images/logos-official/stacked-justified-green.png?v=2020-02-03T14:39:37Z")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.duke {
+div.duke {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://pngimage.net/wp-content/uploads/2018/05/duke-university-logo-png-4.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
-button.lville {
+div.lville {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/1200px-Louisville_Cardinals_logo.svg.png")
     no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
 }
 
-button.wayne {
+div.wayne {
   width: 100px;
   height: 100px;
   background: transparent
     url("https://mac.wayne.edu/images/solidgreenwarriorw-300.png") no-repeat
     center center;
-  background-size: cover;
+  background-size: contain;
   border: none;
   border: 1px solid white;
   margin: 5px;
