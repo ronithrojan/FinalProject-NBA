@@ -21,6 +21,11 @@ div {
   border: 1px solid lightblue;
   margin: 5px;
 }
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
 .results {
   display: flex;
   flex-direction: column;
