@@ -13,6 +13,11 @@ main {
   justify-content: center;
 }
 
+.baller-container {
+  display: flex;
+  flex-direction: column;
+}
+
 p {
   color: white;
   padding: 10px;
@@ -27,6 +32,8 @@ p {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   margin: 15px;
   border: 1px solid white;
 }
@@ -93,4 +100,10 @@ h3 {
 
 h4 {
   color: blue;
+}
+
+@media only screen and (min-width: 768px) {
+  .baller-container {
+    flex-direction: row;
+  }
 }

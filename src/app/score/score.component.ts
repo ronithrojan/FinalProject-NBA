@@ -26,9 +26,9 @@ export class ScoreComponent implements OnInit {
   }
 
   showGif(): void {
-    if (this.lastPlayer.score <= 4) {
+    if (this.lastPlayer.score <= 2) {
       this.showLow = true;
-    } else if (this.lastPlayer.score <= 7) {
+    } else if (this.lastPlayer.score <= 5) {
       this.showAverage = true;
     } else {
       this.showHigh = true;
