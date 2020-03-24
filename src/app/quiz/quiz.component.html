@@ -87,6 +87,7 @@
           <option value="WY">Wyoming</option>
         </select>
       </div>
+      <p>Pick your team:</p>
       <div class="team-container">
         <div class="teams">
           <div class="spartan" (click)="pickedTeam('spartan')"></div>
@@ -106,8 +107,8 @@
           <div class="lville" (click)="pickedTeam('lville')"></div>
           <div class="wayne" (click)="pickedTeam('wayne')"></div>
         </div>
+        <span class="go-button" (click)="hideUserInput()">Go!</span>
       </div>
-      <span class="go-button" (click)="hideUserInput()">Let's Go</span>
     </div>
     <p class="timer">The name here or their team logo here</p>
     <h2 class="timer">00:{{ seconds }}</h2>
