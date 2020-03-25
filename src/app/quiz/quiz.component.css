@@ -58,6 +58,7 @@
   top: 0;
   left: 0;
 }
+
 .userbio {
   display: flex;
   /* justify-content: center; */
@@ -136,6 +137,11 @@
   color: white;
 }
 
+.question-group {
+  padding: 10px;
+  /* width: 50%; */
+}
+
 .introBox {
   border: 3px solid lightblue;
   width: 50%;
@@ -163,6 +169,29 @@
 .teams div {
   display: inline-block;
 }
+
+.submit {
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: orange;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 9px #999;
+}
+
+.submit:hover {
+  background-color: rgba(255, 166, 0, 0.637);
+}
+
+.submit:active {
+  background-color: rgba(255, 166, 0, 0.637);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 div.spartan {
   width: 100px;
   height: 100px;
@@ -172,7 +201,7 @@ div.spartan {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 
 div.uofm {
@@ -184,7 +213,7 @@ div.uofm {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.unc {
   width: 100px;
@@ -195,7 +224,7 @@ div.unc {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.uconn {
   width: 100px;
@@ -206,7 +235,7 @@ div.uconn {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.wmu {
   width: 100px;
@@ -217,7 +246,7 @@ div.wmu {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.nd {
   width: 100px;
@@ -228,7 +257,7 @@ div.nd {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.fsu {
   width: 100px;
@@ -239,7 +268,7 @@ div.fsu {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.cmu {
   width: 100px;
@@ -250,7 +279,7 @@ div.cmu {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.gonz {
   width: 100px;
@@ -261,7 +290,7 @@ div.gonz {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.kans {
   width: 100px;
@@ -272,7 +301,7 @@ div.kans {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.dayt {
   width: 100px;
@@ -283,7 +312,7 @@ div.dayt {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.sds {
   width: 100px;
@@ -294,7 +323,7 @@ div.sds {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.emu {
   width: 100px;
@@ -305,7 +334,7 @@ div.emu {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.duke {
   width: 100px;
@@ -316,7 +345,7 @@ div.duke {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 div.lville {
   width: 100px;
@@ -327,7 +356,7 @@ div.lville {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 
 div.wayne {
@@ -339,11 +368,17 @@ div.wayne {
   background-size: contain;
   border: none;
   border: 1px solid white;
-  margin: 5px;
+  margin: 15px;
 }
 
 .spartan {
   background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 25px;
 }
 
 .uofm {
