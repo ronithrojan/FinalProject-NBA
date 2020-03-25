@@ -3,10 +3,10 @@
   <div class="results-container">
     <div class="results">
       <h3>Results!</h3>
-      <p><span class="name">Name:</span> {{ lastPlayer?.username }}</p>
-      <p><span class="city"> City:</span> {{ lastPlayer?.city }}</p>
-      <p><span class="state">State:</span> {{ lastPlayer?.state }}</p>
-      <p><span class="your-score">Your Score:</span> {{ lastPlayer?.score }}</p>
+      <p>Name: {{ lastPlayer?.username }}</p>
+      <p>City: {{ lastPlayer?.city }}</p>
+      <p>State: {{ lastPlayer?.state }}</p>
+      <p>Your Score:{{ lastPlayer?.score }}</p>
       <button class="answer-button" (click)="showAnswers()">
         See your answers!
       </button>

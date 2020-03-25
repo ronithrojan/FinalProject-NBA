@@ -38,22 +38,6 @@ h3 {
   color: white;
 }
 
-.name {
-  color: blue;
-}
-
-.city {
-  color: blue;
-}
-
-.state {
-  color: blue;
-}
-
-.your-score {
-  color: blue;
-}
-
 .results {
   display: flex;
   flex-direction: column;
@@ -135,6 +119,7 @@ span {
 .answer-button {
   background-color: black;
   color: blue;
+  border: none;
 }
 
 .answer-paragraph {
@@ -232,9 +217,9 @@ span {
     color: black;
   }
 
-  span {
+  /* span {
     color: white;
-  }
+  } */
 
   .scoreBox {
     width: 500px;
