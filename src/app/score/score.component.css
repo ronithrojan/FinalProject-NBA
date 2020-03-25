@@ -62,24 +62,14 @@ p {
   justify-content: center;
   border: none;
 }
-/* .hi-title {
-  display: flex;
-  align-self: center;
-} */
 
 .hiscores {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border: none;
-
-  /* display: flex;
-  flex-direction: column;
   text-align: center;
   justify-content: center;
-  transform: translate(-50px); */
+  padding: 0px;
   /* border: 1px solid lightblue; */
-  /* align-items: center; */
 }
 .googlemap {
   display: flex;
@@ -124,14 +114,22 @@ span {
 }
 
 .scoreBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 500px;
-  align-items: center;
-  padding: 10px;
+  /* align-items: center; */
+  /* padding: 10px; */
 }
 
 .scoreInfo {
   color: white;
+  text-align: center;
   font-size: 12px;
+  /* margin: 0 auto; */
+}
+li {
+  margin: 0 auto;
 }
 
 .answer-button {
