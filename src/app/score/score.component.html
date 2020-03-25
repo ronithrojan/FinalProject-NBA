@@ -2,7 +2,7 @@
 <div class="gif-template">
   <div class="results-container">
     <div class="results">
-      <h3>Results!</h3>
+      <h3 class="result-title">Results!</h3>
       <p>Name: {{ lastPlayer?.username }}</p>
       <p>City: {{ lastPlayer?.city }}</p>
       <p>State: {{ lastPlayer?.state }}</p>
@@ -34,7 +34,9 @@
         ></a>
       </p>
       <div>
-        <p>BALLER ALERT! Great job, you are clearly a master of your craft!</p>
+        <p class="gif-caption">
+          BALLER ALERT! Great job, you are clearly a master of your craft!
+        </p>
       </div>
     </div>
     <div class="average gif-title" *ngIf="showAverage">
@@ -49,7 +51,7 @@
           href="https://giphy.com/gifs/basketball-sport-3o7WIwpBjAPFQR2gpO"
         ></a>
       </p>
-      <p>
+      <p class="gif-caption">
         Great job! You're definitely on the right track, keep your eye on the
         ball!
       </p>
@@ -66,13 +68,13 @@
         ></a>
       </p>
       <div class="paragraph">
-        <p>Bro, do you even bball?</p>
+        <p class="gif-caption">Bro, do you even bball?</p>
       </div>
     </div>
   </div>
 </div>
 <ul class="hiscores">
-  <h3>Hi-Scores</h3>
+  <h3 class="hi-title">Hi-Scores</h3>
   <li *ngFor="let score of scores">
     <div class="scoreBox">
       <p class="scoreInfo">

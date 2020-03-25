@@ -11,18 +11,31 @@ ul {
 }
 .gifs {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  transform: translate(100px);
+  /* margin-left: 80px; */
   border: none;
+  object-fit: contain;
+  height: 400px;
+  width: 400px;
+}
+.gif-caption {
+  display: flex;
+  align-self: center;
+  text-align: center;
 }
 h3 {
   display: flex;
   align-self: center;
   color: blue;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .results {
   color: white;
+  text-align: center;
 }
 
 .gif-title {
@@ -49,18 +62,24 @@ p {
   justify-content: center;
   border: none;
 }
-.gifs {
-  /* display: flex; */
-  object-fit: contain;
-  height: 400px;
-  width: 400px;
-}
+/* .hi-title {
+  display: flex;
+  align-self: center;
+} */
+
 .hiscores {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  border: none;
+
+  /* display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
+  transform: translate(-50px); */
   /* border: 1px solid lightblue; */
+  /* align-items: center; */
 }
 .googlemap {
   display: flex;
@@ -113,12 +132,6 @@ span {
 .scoreInfo {
   color: white;
   font-size: 12px;
-}
-
-.hiscores {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
 }
 
 .answer-button {
@@ -197,6 +210,7 @@ span {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    padding: 0px;
     border: 1px solid lightblue;
   }
   .googlemap {
