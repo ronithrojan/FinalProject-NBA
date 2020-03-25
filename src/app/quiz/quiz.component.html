@@ -118,41 +118,49 @@
         <input
           type="radio"
           name="{{ i }}"
-          id="{{ question.id }}"
-          value="{{ questions.choice_1 }}"
+          id="{{ question.choice_1 }}{{ question.id }}"
+          value="{{ question.choice_1 }}"
           ngModel
         />
-        <label for="{{ question.id }}">{{ question.choice_1 }}</label>
+        <label for="{{ question.choice_1 }}{{ question.id }}">{{
+          question.choice_1
+        }}</label>
       </div>
       <div class="choice">
         <input
           type="radio"
           name="{{ i }}"
-          id="{{ question.id }}"
+          id="{{ question.choice_2 }}{{ question.id }}"
           value="{{ question.choice_2 }}"
           ngModel
         />
-        <label for="{{ question.id }}">{{ question.choice_2 }}</label>
+        <label for="{{ question.choice_2 }}{{ question.id }}">{{
+          question.choice_2
+        }}</label>
       </div>
       <div class="choice">
         <input
           type="radio"
           name="{{ i }}"
-          id="{{ question.id }}"
+          id="{{ question.choice_3 }}{{ question.id }}"
           value="{{ question.choice_3 }}"
           ngModel
         />
-        <label for="{{ question.id }}">{{ question.choice_3 }}</label>
+        <label for="{{ question.choice_3 }}{{ question.id }}">{{
+          question.choice_3
+        }}</label>
       </div>
       <div class="choice">
         <input
           type="radio"
           name="{{ i }}"
-          id="{{ question.id }}"
+          id="{{ question.choice_4 }}{{ question.id }}"
           value="{{ question.choice_4 }}"
           ngModel
         />
-        <label for="{{ question.id }}">{{ question.choice_4 }}</label>
+        <label for="{{ question.choice_4 }}{{ question.id }}">{{
+          question.choice_4
+        }}</label>
       </div>
     </div>
     <button>Submit Quiz</button>
