@@ -31,6 +31,10 @@ h3 {
   justify-content: center;
   flex-direction: column;
 }
+
+p {
+  color: white;
+}
 .paragraph {
   display: flex;
   flex-direction: column;
