@@ -35,7 +35,12 @@ h3 {
 
 .results {
   color: white;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.result-title {
+  background-color: white;
+  width: 35%;
 }
 
 .gif-title {
@@ -57,9 +62,8 @@ p {
 }
 
 .results {
-  display: flex;
+  display: flex-start;
   flex-direction: column;
-  justify-content: center;
   border: none;
 }
 
@@ -133,9 +137,12 @@ li {
 }
 
 .answer-button {
-  background-color: black;
+  background-color: white;
   color: blue;
+  font-weight: bolder;
   border: none;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .answer-paragraph {
@@ -147,9 +154,17 @@ li {
 }
 
 .answers-container {
-  position: absolute;
-  background-color: black;
-  transform: translate(-7px, 45px);
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.lastplayer-score {
+  width: 200px;
+}
+
+.box {
+  overflow-y: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -192,7 +207,8 @@ li {
     display: flex;
     flex-direction: column;
     border: 1px solid white;
-    height: 400px;
+    min-height: 400px;
+    height: 100%;
     width: 400px;
     padding: 25px;
   }

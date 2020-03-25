@@ -1,19 +1,25 @@
 <app-header></app-header>
 <div class="gif-template">
   <div class="results-container">
-    <div class="results">
-      <h3 class="result-title">Results!</h3>
-      <p>Name: {{ lastPlayer?.username }}</p>
-      <p>City: {{ lastPlayer?.city }}</p>
-      <p>State: {{ lastPlayer?.state }}</p>
-      <p>Your Score:{{ lastPlayer?.score }}</p>
+    <div class="lastplayer-score">
+      <div class="results">
+        <h3 class="result-title">Results!</h3>
+        <p>Name: {{ lastPlayer?.username }}</p>
+        <p>City: {{ lastPlayer?.city }}</p>
+        <p>State: {{ lastPlayer?.state }}</p>
+        <p>Your Score:{{ lastPlayer?.score }}</p>
+      </div>
       <button class="answer-button" (click)="showAnswers()">
         See your answers!
       </button>
       <div class="answers-container" *ngIf="show">
-        <div *ngFor="let question of questionsAndAnswers.questions; index as i">
+        <div
+          class="box"
+          *ngFor="let question of questionsAndAnswers.questions; index as i"
+        >
           <p class="answer-paragraph">
-            Correct Answer: {{ question?.answer }} Your Answer:
+            Correct Answer: {{ question?.answer }} <br />
+            Your Answer:
             {{ questionsAndAnswers.answers[i] }}
           </p>
         </div>
