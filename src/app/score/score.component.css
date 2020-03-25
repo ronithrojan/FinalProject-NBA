@@ -37,6 +37,23 @@ h3 {
   border: none;
   color: white;
 }
+
+.name {
+  color: blue;
+}
+
+.city {
+  color: blue;
+}
+
+.state {
+  color: blue;
+}
+
+.your-score {
+  color: blue;
+}
+
 .results {
   display: flex;
   flex-direction: column;
@@ -115,8 +132,23 @@ span {
   align-items: center;
 }
 
+.answer-button {
+  background-color: black;
+  color: blue;
+}
+
 .answer-paragraph {
   color: white;
+}
+
+.results-container {
+  position: relative;
+}
+
+.answers-container {
+  position: absolute;
+  background-color: black;
+  transform: translate(-7px, 45px);
 }
 
 @media only screen and (min-width: 768px) {
