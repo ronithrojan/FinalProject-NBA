@@ -7,6 +7,17 @@
       <p>City: {{ lastPlayer?.city }}</p>
       <p>State: {{ lastPlayer?.state }}</p>
       <p>Your Score: {{ lastPlayer?.score }}</p>
+      <button class="answer-button" (click)="showAnswers()">
+        See your answers!
+      </button>
+      <div *ngIf="show">
+        <div *ngFor="let question of questionsAndAnswers.questions; index as i">
+          <p class="answer-paragraph">
+            Correct Answer: {{ question?.answer }} Your Answer:
+            {{ questionsAndAnswers.answers[i] }}
+          </p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="gifs">

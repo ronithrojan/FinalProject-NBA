@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { TriviaquizService } from "../triviaquiz.service";
 import { Score } from "../interfaces/score";
 import { LastPlayer } from "../interfaces/last-player";
+import { QuestionAnswers } from "../interfaces/question-answers";
 
 @Component({
   selector: "app-score",
@@ -14,6 +15,9 @@ export class ScoreComponent implements OnInit {
   showAverage: boolean = false;
   showLow: boolean = false;
   lastPlayer: LastPlayer;
+  questionsAndAnswers: QuestionAnswers;
+  show: boolean = false;
+
   constructor(private service: TriviaquizService) {}
 
   ngOnInit(): void {
@@ -22,6 +26,8 @@ export class ScoreComponent implements OnInit {
       console.log(response);
     });
     this.lastPlayer = this.service.getLastPlayer();
+    this.questionsAndAnswers = this.service.getQuestionsAndAnswers();
+    console.log(this.questionsAndAnswers);
     this.showGif();
   }
 
@@ -33,5 +39,10 @@ export class ScoreComponent implements OnInit {
     } else {
       this.showHigh = true;
     }
+  }
+
+  showAnswers(): any {
+    this.show = !this.show;
+    console.log("whadup");
   }
 }
