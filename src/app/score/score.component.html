@@ -9,9 +9,11 @@
         <p>State: {{ lastPlayer?.state }}</p>
         <p>Your Score:{{ lastPlayer?.score }}</p>
       </div>
-      <button class="answer-button" (click)="showAnswers()">
-        See your answers!
-      </button>
+      <div class="answer-button-container">
+        <button class="answer-button" (click)="showAnswers()">
+          See your answers!
+        </button>
+      </div>
       <div class="answers-container" *ngIf="show">
         <div
           class="box"

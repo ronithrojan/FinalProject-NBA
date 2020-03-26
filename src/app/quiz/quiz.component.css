@@ -59,10 +59,14 @@
   left: 0;
 }
 
+.form {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .userbio {
   display: flex;
   /* justify-content: center; */
-  width: 50%;
   height: 300px;
   background-color: white;
   z-index: 2;
@@ -83,13 +87,18 @@
   justify-content: center;
 } */
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .hide {
   display: none;
 }
 
 .show {
   display: block;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .play {
@@ -107,10 +116,6 @@
   color: white;
   padding: 10px;
   text-align: center;
-}
-.container {
-  display: flex;
-  justify-content: center;
 }
 
 .playButton {
@@ -376,71 +381,140 @@ div.wayne {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
-  margin-left: 25%;
   border-radius: 25px;
 }
 
 .uofm {
   background-color: blue;
   color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .unc {
   background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .uconn {
   background-color: navy;
   color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .bc {
   background-color: #501315;
   color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .nd {
   background-color: navy;
   color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .fsu {
   background-color: maroon;
   color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .cmu {
   background-color: maroon;
   color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .gonz {
   background-color: blue;
   color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .kans {
   background-color: navy;
   color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .dayt {
   background-color: #9bddff;
   color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .sds {
   background-color: #ff2400;
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .emu {
   background-color: green;
   color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .duke {
   background-color: #00009c;
   color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .lville {
   background-color: black;
   color: #c41e3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .wayne {
   background-color: green;
   color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
 }
 .wmu {
   background-color: brown;
   color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .userbio {
+    width: 96.3%;
+    border-radius: 5px;
+  }
 }

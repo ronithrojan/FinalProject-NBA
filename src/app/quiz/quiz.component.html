@@ -1,7 +1,7 @@
 <app-header></app-header>
-<div class="container">
+<div class="container" [ngClass]="{ hide: !playButton }">
   <div class="introBox">
-    <p class="play-p" [ngClass]="{ hide: !playButton }">
+    <p class="play-p">
       Are you bummed that the NCAA tournament is cancelled? Us too! So, to get
       your March Madness fix, see if you can answer these questions to become
       ballers like us! Catch the ball, fill in your details, and pick your team
