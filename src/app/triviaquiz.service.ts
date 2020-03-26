@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Question } from "./interfaces/question";
 import { NgForm } from "@angular/forms";
+import { environment } from "src/environments/environment";
 import { QuestionAnswers } from "./interfaces/question-answers";
 // import { format } from "path";
 
@@ -9,7 +10,7 @@ import { QuestionAnswers } from "./interfaces/question-answers";
   providedIn: "root"
 })
 export class TriviaquizService {
-  baseUrl: string = "http://localhost:3000";
+  private readonly baseUrl = environment.apiBaseUrl;
   lastPlayer: any = {
     username: "",
     score: 0
